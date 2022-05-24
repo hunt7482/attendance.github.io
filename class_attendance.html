@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Form</title>
+    <link rel="stylesheet" href="attendance.css">
+</head>
+
+<body>
+    <div class="ashish">
+        <form action="backend.php">
+            <h1 class="attendance_heading">Attendance Form</h1>
+            <hr>
+            <h2>Student Information</h2>
+            <h5>Required fields are follewed by *</h5>
+            <hr>
+            <p>Name: *
+                <input type="text" name="name" placeholder="Ashish Kumar"></p>
+            <p>Registration No.: *
+                <input type="number" name="number" id="Registration no." placeholder="20103127051">
+            </p>
+            <fieldset>
+                <legend>Branch</legend>
+                <p>
+                    EE <input type="radio" name="branch" id=""> CSE <input type="radio" name="branch" id=""> CE <input type="radio" name="branch" id=""> ME <input type="radio" name="branch" id="">
+                </p>
+            </fieldset>
+            <p>Roll No.: *
+                <input type="text" name="name" placeholder="20EE42">
+            </p>
+            <p>Email:
+                <input type="text" name="name" placeholder="ashish@gmail.com">
+            </p>
+            <p>Subject:
+                <select name="subject" id="subject">
+                    <option value="--Seclect a Subject--">--Seclect a Subject--</option>
+                    <option value="Electrical Circuit">Electrical Circuit</option>
+                    <option value="Electrical Analysis">Electrical Analysis</option>
+                    <option value="Electrical Machines">Electrical Machines</option>
+                    <option value="Electrical Fields">Electrical Fields</option>
+                </select>
+            </p>
+            <p>Date:
+                <input type="date" name="date" id="date">
+            </p>
+            <p><input type="reset" value="Reset"></p>
+            <p><input type="submit" value="Submit Now"></p>
+        </form>
+    </div>
+</body>
+
+</html>
